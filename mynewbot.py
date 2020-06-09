@@ -195,5 +195,6 @@ async def list(ctx):
     for i in filelist:
         await ctx.send(i)
 #TODO: Add the token into the client to run
-
-client.run('') # DO NOT SHARE THIS
+f = open('token.txt', 'r')
+client.run(f.read()) # DO NOT SHARE THIS
+f.close()
